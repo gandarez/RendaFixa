@@ -1,0 +1,10 @@
+before_build:
+ - nuget restore
+build_script:
+ - msbuild /verbosity:quiet "RendaFixa.sln"
+test_script:
+ - .\packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -register:user -target:"%xunit20%\xunit.console.x86.exe" -targetargs:"tests\RendaFixa.CDB.Tests\bin\Debug\Gandarez.RendaFixa.CDB.Tests.dll tests\RendaFixa.TD.Tests\bin\Debug\Gandarez.RendaFixa.TD.Tests.dll tests\RendaFixa.IR.Tests\bin\Debug\Gandarez.RendaFixa.IR.Tests.dll -noshadow" -output:"coverage.xml" -filter:"+[Gandarez*]* -[*Tests*]*"
+after_test:
+ - "SET PATH=C:\\Python34;C:\\Python34\\Scripts;%PATH%"
+ - pip install codecov
+ - codecov -f "coverage.xml" -t 0400bc7b-a752-4948-90ed-2177ddff9b32 -X gcov
