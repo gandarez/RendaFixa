@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RendaFixa.CDB", "RendaFixa.CDB\RendaFixa.CDB.csproj", "{D296EF7E-F3BE-4137-A59B-10F346B25C6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RendaFixa.IR", "RendaFixa.IR\RendaFixa.IR.csproj", "{9E2D7AA9-5C8E-4C92-A693-EF29662E3A0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RendaFixa.TD", "RendaFixa.TD\RendaFixa.TD.csproj", "{5568D753-9B41-4F9A-8D96-9A8FF3766AAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{54A2EDB6-2E5D-453C-BC3D-23CAC6E1D570}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RendaFixa.CDB.Tests", "RendaFixa.CDB.Tests\RendaFixa.CDB.Tests.csproj", "{6B1451AF-1837-484B-8AF0-7D0971C7F34C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RendaFixa.TD.Tests", "RendaFixa.TD.Tests\RendaFixa.TD.Tests.csproj", "{97EB692C-1411-42D2-B1B8-5F5AAB70AAD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RendaFixa.IR.Tests", "RendaFixa.IR.Tests\RendaFixa.IR.Tests.csproj", "{8BFEAEAD-BE78-468E-8901-E26114C43C43}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ECC8B4E4-8B78-4E01-8B90-3E0B2DD456FD}"
+	ProjectSection(SolutionItems) = preProject
+		CodeCoverage.runsettings = CodeCoverage.runsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D296EF7E-F3BE-4137-A59B-10F346B25C6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D296EF7E-F3BE-4137-A59B-10F346B25C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D296EF7E-F3BE-4137-A59B-10F346B25C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D296EF7E-F3BE-4137-A59B-10F346B25C6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E2D7AA9-5C8E-4C92-A693-EF29662E3A0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E2D7AA9-5C8E-4C92-A693-EF29662E3A0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E2D7AA9-5C8E-4C92-A693-EF29662E3A0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E2D7AA9-5C8E-4C92-A693-EF29662E3A0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5568D753-9B41-4F9A-8D96-9A8FF3766AAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5568D753-9B41-4F9A-8D96-9A8FF3766AAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5568D753-9B41-4F9A-8D96-9A8FF3766AAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5568D753-9B41-4F9A-8D96-9A8FF3766AAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B1451AF-1837-484B-8AF0-7D0971C7F34C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B1451AF-1837-484B-8AF0-7D0971C7F34C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B1451AF-1837-484B-8AF0-7D0971C7F34C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B1451AF-1837-484B-8AF0-7D0971C7F34C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97EB692C-1411-42D2-B1B8-5F5AAB70AAD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97EB692C-1411-42D2-B1B8-5F5AAB70AAD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97EB692C-1411-42D2-B1B8-5F5AAB70AAD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97EB692C-1411-42D2-B1B8-5F5AAB70AAD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BFEAEAD-BE78-468E-8901-E26114C43C43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BFEAEAD-BE78-468E-8901-E26114C43C43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BFEAEAD-BE78-468E-8901-E26114C43C43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BFEAEAD-BE78-468E-8901-E26114C43C43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B1451AF-1837-484B-8AF0-7D0971C7F34C} = {54A2EDB6-2E5D-453C-BC3D-23CAC6E1D570}
+		{97EB692C-1411-42D2-B1B8-5F5AAB70AAD8} = {54A2EDB6-2E5D-453C-BC3D-23CAC6E1D570}
+		{8BFEAEAD-BE78-468E-8901-E26114C43C43} = {54A2EDB6-2E5D-453C-BC3D-23CAC6E1D570}
+	EndGlobalSection
+EndGlobal
