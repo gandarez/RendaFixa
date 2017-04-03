@@ -68,7 +68,7 @@ namespace Gandarez.RendaFixa.TD.Tests
         }
 
         [Fact]
-        public void Taxa13_66_DiversosDias_SemCondicaoResgate_DeveRetornar_Pu_903_075616645()
+        public void Taxa13_66_DiversosDias_SemCondicaoResgate_DeveRetornar_Pu_392_035532728()
         {
             var ntnf = new NTNF();
             var actual = ntnf.PU(13.66, new[] { 28, 159, 281, 409, 532, 660, 784, 911, 1036, 1162, 1285, 1415 });

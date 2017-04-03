@@ -60,7 +60,7 @@ namespace Gandarez.RendaFixa.TD.Tests
         }
 
         [Fact]
-        public void Taxa6_5_106Dias_SemCondicaoResgate_SemTruncar_DeveRetornar_Cotacao_0_97385836702506()
+        public void Taxa6_5_106Dias_SemCondicaoResgate_SemTruncar_DeveRetornar_Cotacao_0_0287901749043618()
         {
             var ntnb = new NTNB();
             var actual = ntnb.Cotacao(6.5, 106, false, false);
@@ -75,6 +75,15 @@ namespace Gandarez.RendaFixa.TD.Tests
             var actual = ntnb.Cotacao(5.32, new[] { 91, 219, 341, 472, 593, 724, 846, 973, 1097, 1224, 1347 }, true);
                         
             Assert.Equal(1.039339623M, actual);
+        }
+
+        [Fact]
+        public void Taxa5_32_DiversosDias_SemCondicaoResgate_DeveRetornar_Cotacao_0_281331003()
+        {
+            var ntnb = new NTNB();
+            var actual = ntnb.Cotacao(5.32, new[] { 91, 219, 341, 472, 593, 724, 846, 973, 1097, 1224, 1347 });
+
+            Assert.Equal(0.281331003M, actual);
         }
 
         [Fact]
