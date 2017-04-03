@@ -65,7 +65,16 @@ namespace Gandarez.RendaFixa.TD.Tests
             var actual = ntnf.PU(13.66, new[] { 28, 159, 281, 409, 532, 660, 784, 911, 1036, 1162, 1285, 1415 }, true);
 
             Assert.Equal(903.075616645M, actual);
-        }        
+        }
+
+        [Fact]
+        public void Taxa13_66_DiversosDias_SemCondicaoResgate_DeveRetornar_Pu_903_075616645()
+        {
+            var ntnf = new NTNF();
+            var actual = ntnf.PU(13.66, new[] { 28, 159, 281, 409, 532, 660, 784, 911, 1036, 1162, 1285, 1415 });
+
+            Assert.Equal(392.035532728M, actual);
+        }
 
         [Fact]
         public void DeveRetornar_Cupom_48_80885()
