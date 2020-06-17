@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace Gandarez.RendaFixa.TD
@@ -65,7 +65,7 @@ namespace Gandarez.RendaFixa.TD
             var cotacao = dias.Sum(t => Cotacao(taxa, t));
 
             if (resgate)
-                cotacao += Cotacao(taxa, dias[dias.Length - 1], true);
+                cotacao += Cotacao(taxa, dias[^1], true);
 
             return cotacao;
         }
@@ -87,6 +87,7 @@ namespace Gandarez.RendaFixa.TD
             */            
             cotacao = Math.Truncate(cotacao * 10000) / 10000 / 100;
             var pu = (decimal)(vna * cotacao);
+            
             return truncate ? Math.Truncate(pu * 1000000) / 1000000 : pu;
         }
 
@@ -108,6 +109,7 @@ namespace Gandarez.RendaFixa.TD
             */
             taxa = taxa / 100 + 1;
             var vp = (decimal)(valor / Math.Pow(taxa, (double)dias / 252));
+            
             return truncate ? Math.Truncate(vp * 1000000) / 1000000 : vp;
         }
 
@@ -128,6 +130,7 @@ namespace Gandarez.RendaFixa.TD
             * 
             */           
             ipca = ipca / 100 + 1;
+            
             return (decimal)(vna * Math.Pow(ipca, (double)dias2 / dias));
         }
     }

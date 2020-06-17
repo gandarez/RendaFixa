@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Gandarez.RendaFixa.LCI;
 using Xunit;
 
-namespace RendaFixa.LCI.Tests
+namespace Gandarez.RendaFixa.Tests.LCI
 {
     public class LCIPreFixadoTest
     {

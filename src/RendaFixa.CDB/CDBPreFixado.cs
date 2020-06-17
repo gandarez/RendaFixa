@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Gandarez.RendaFixa.CDB
 {
@@ -14,6 +14,7 @@ namespace Gandarez.RendaFixa.CDB
         public decimal PU(double valor, double taxa, int dias)
         {
             taxa = taxa / 100 + 1;
+            
             return (decimal)(valor * Math.Pow(taxa, (double)dias / 252));
         }
     }

@@ -13,8 +13,10 @@ namespace Gandarez.RendaFixa.IR.Tabela
                 return 22.5;
             if (dias <= 360)
                 return 20;
+            if (dias <= 720)
+                return 17.5;
 
-            return dias <= 720 ? 17.5 : 15;
+            return 15;
         }
     }
 }

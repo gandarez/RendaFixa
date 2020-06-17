@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace Gandarez.RendaFixa.TD
@@ -66,7 +66,7 @@ namespace Gandarez.RendaFixa.TD
             var pu = dias.TakeWhile((i, i1) => i1 < dias.Length - 1).Sum(t => PU(taxa, t));
 
             if (resgate)
-                pu += PU(taxa, dias[dias.Length - 1], true);
+                pu += PU(taxa, dias[^1], true);
 
             return Math.Truncate(pu * 1000000000) / 1000000000;
         }        
