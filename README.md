@@ -1,7 +1,7 @@
 Renda Fixa
 =========
 
-[![License LGPLv3](https://img.shields.io/badge/license-LGPLv3-green.svg)](http://www.gnu.org/licenses/lgpl-3.0.html)
+[![License LGPLv3](https://img.shields.io/badge/license-LGPLv3-green.svg)](http://www.gnu.org/licenses/lgpl-3.0.html) [![Coverage Status](https://coveralls.io/repos/github/gandarez/RendaFixa/badge.svg)](https://coveralls.io/github/gandarez/RendaFixa) ![Build Status](https://github.com/gandarez/RendaFixa/workflows/build/badge.svg)
 
 ## Overview
 
