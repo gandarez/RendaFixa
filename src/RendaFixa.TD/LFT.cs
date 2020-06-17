@@ -19,6 +19,7 @@ namespace Gandarez.RendaFixa.TD
              * 
              */
             taxa = 1 + Math.Truncate(taxa * 10000) / 10000 / 100;
+            
             return (decimal)Math.Truncate(100 / Math.Pow(taxa, (double)dias / 252) * 10000) / 10000;
         }
 
@@ -36,7 +37,8 @@ namespace Gandarez.RendaFixa.TD
              *  PU=vna*cotacao
              * 
              */
-            cotacao = Math.Truncate(cotacao * 10000) / 10000 / 100;            
+            cotacao = Math.Truncate(cotacao * 10000) / 10000 / 100; 
+            
             return Math.Truncate(cotacao * (Math.Truncate(vna * 1000000) / 1000000) * 1000000) / 1000000;
         }
 

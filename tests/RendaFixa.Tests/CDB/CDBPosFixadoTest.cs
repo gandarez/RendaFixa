@@ -1,6 +1,7 @@
+using Gandarez.RendaFixa.CDB;
 using Xunit;
 
-namespace Gandarez.RendaFixa.CDB.Tests
+namespace Gandarez.RendaFixa.Tests.CDB
 {
     public class CDBPosFixadoTest
     {

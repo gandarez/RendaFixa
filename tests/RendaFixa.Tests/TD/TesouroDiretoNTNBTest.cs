@@ -1,6 +1,7 @@
-﻿using Xunit;
+using Gandarez.RendaFixa.TD;
+using Xunit;
 
-namespace Gandarez.RendaFixa.TD.Tests
+namespace Gandarez.RendaFixa.Tests.TD
 {
     public class TesouroDiretoNTNBTest
     {

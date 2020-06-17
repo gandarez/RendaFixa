@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Gandarez.RendaFixa.TD
 {
@@ -20,6 +20,7 @@ namespace Gandarez.RendaFixa.TD
              */
             taxa = 1 + Math.Truncate(taxa * 10000) / 10000 / 100;
             var pu = 1000 / Math.Pow(taxa, (double)dias / 252);
+            
             return (decimal)(Math.Truncate(pu * 1000000) / 1000000);
         }
 
@@ -38,6 +39,7 @@ namespace Gandarez.RendaFixa.TD
              * 
              */
             var taxa = (Math.Pow(1000 / pu, 252 / (double)dias) - 1) * 100;
+            
             return (decimal)(Math.Truncate(taxa * 10000) / 10000);
         }
 
@@ -57,6 +59,7 @@ namespace Gandarez.RendaFixa.TD
              * 
              */
             var rentBruta = precoVenda / precoCompra - 1;
+            
             return truncate ? Math.Truncate(rentBruta * 100 * 10000) / 10000 : rentBruta;
         }
 
@@ -76,6 +79,7 @@ namespace Gandarez.RendaFixa.TD
              * 
              */
             var rentBruta = Rentabilidade(precoCompra, precoVenda, false);
+            
             return (decimal)Math.Truncate((Math.Pow((double)(1 + rentBruta), 252 / (double)dias) - 1) * 100 * 10000) / 10000;
         }
     }

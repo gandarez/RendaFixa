@@ -14,6 +14,7 @@ namespace Gandarez.RendaFixa.LCI
              */
             var taxaConvertida = (decimal)(Math.Pow(1 + taxa / 100, (double)meses / 12) - 1);
             var rentBruta = precoCompra  * (1 + taxaConvertida);
+            
             return truncate ? Math.Truncate(rentBruta * 100 * 10000) / 10000 : rentBruta;
         }
     }
